@@ -1,0 +1,231 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap");
+
+body {
+	font-size: 16px;
+	line-height: 24px;
+	font-family: "Roboto Mono", monospace;
+	color: #858c95;
+}
+
+strong {
+	color: #000;
+}
+
+input {
+	font-family: inherit;
+}
+
+section {
+	display: flex;
+	justify-content: center;
+	padding-left: 1.5rem;
+	padding-right: 1.5rem;
+}
+
+section .container {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	width: 80%;
+}
+
+ul {
+	padding: 0px;
+}
+
+nav {
+	width: 75%;
+}
+
+nav li a {
+	color: lightgrey;
+	text-decoration: none;
+}
+
+nav li a:hover {
+	color: gray;
+}
+
+nav li.active a {
+	color: #4338ca;
+	padding-bottom: 2px;
+	border-bottom: 1px solid #4338ca;
+}
+
+.progress-button {
+	width: 25%;
+	text-align: right;
+	padding: 0px 10px;
+}
+
+.progress-button a {
+	text-decoration: none;
+	background-color: #4338ca;
+	color: white;
+	padding: 10px;
+	border-radius: 5px;
+}
+
+nav ul li {
+	display: inline;
+	padding: 5px 10px;
+}
+
+/*content*/
+section.content {
+	margin-top: 4rem;
+	margin-bottom: 4rem;
+}
+
+.day-task-content {
+	width: 50%;
+	padding: 10px;
+}
+
+.day-task-content .title {
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+.day-task-content h1 {
+	font-size: 3.75rem;
+}
+
+.day-task-content .day-number {
+	color: #4338ca;
+}
+
+.day-task-content .day-task-template span {
+	background-color: #4338ca;
+	border-radius: 50%;
+	color: white;
+	padding: 6px;
+	font-size: 14px;
+}
+
+.day-task-content .day-task-template a {
+	background-color: lightgray;
+	padding: 5px;
+}
+
+.day-task-content input {
+	width: 50%;
+	padding: 15px;
+	border-radius: 5px;
+	border: 1px solid lightgray;
+	color: black;
+}
+
+.day-task-content input.error {
+	border-color: #e55f5f;
+	color: #e55f5f;
+}
+
+.day-task-content p.error-message {
+	display: none;
+	color: #e55f5f;
+}
+
+.day-task-content button {
+	padding: 15px;
+	background-color: #4338ca;
+	color: white;
+	border-radius: 5px;
+	border: 0px;
+	font-family: inherit;
+}
+
+.day-task-template {
+	padding-top: 1rem;
+}
+
+.day-task-example {
+	width: 50% !important;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.day-task-template a {
+	text-decoration: none;
+}
+
+.time-left {
+	padding-left: 10px;
+}
+
+.pen {
+	width: 400px;
+	height: 400px;
+	overflow: hidden;
+	position: relative;
+	background-position: 50%;
+	background-size: auto;
+	background-repeat: no-repeat;
+	--webkit-transform: translateZ(0);
+	transform: translateZ(0);
+	border-radius: 0.375rem;
+	box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+		0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+iframe {
+	border: none;
+	height: 560px;
+	margin: -90px 0 -70px;
+	opacity: 1;
+	overflow: hidden;
+	padding: 0;
+	position: relative;
+	width: 400px;
+	z-index: 5;
+}
+
+.day-task-switch {
+	width: 400px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.day-task-switch span {
+	font-size: 14px;
+	padding: 0px 10px;
+}
+
+.day-task-switch p:nth-child(2) a {
+	padding: 0px 5px;
+	font-size: 16px;
+}
+
+.submitted-pens-section .container {
+	display: flex;
+	flex-direction: column;
+	margin-top: 4rem;
+	margin-bottom: 4rem;
+}
+
+.submitted-pens-section .title {
+	width: 100%;
+	text-align: center;
+}
+.title span {
+	background-color: #4338ca;
+	border-radius: 50%;
+	color: white;
+	padding: 6px 10px;
+	font-size: 14px;
+}
+
+.others-submitted-pens {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+}
+
+.submitted-pen-block {
+	width: 50%;
+	display: flex;
+	justify-content: center;
+	padding: 1rem 2rem;
+}
